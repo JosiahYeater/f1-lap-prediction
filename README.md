@@ -12,6 +12,24 @@ Also included: a simple **error-weighted feature “influence” heatmap** (see 
 
 ---
 
+## Table of contents
+- [Quickstart](#quickstart)
+- [Why this project?](#why-this-project)
+- [Repo structure](#repo-structure)
+- [Pipeline overview](#pipeline-overview-plain-english)
+- [Usage examples](#usage-examples)
+- [My results](#my-results)
+  - [Best-run metrics](#best-run-metrics)
+  - [Metrics explained](#metrics-explained)
+  - [Best-run plots](#best-run-plots)
+  - [Caveat on the heatmap](#caveat-on-the-heatmap)
+- [Reproducibility](#reproducibility)
+- [Troubleshooting](#troubleshooting)
+- [Acknowledgments](#acknowledgments)
+- [License](#license)
+
+---
+
 ## Quickstart
 
 Works on CPU — training takes ~ 4 hours; GPU optional.
@@ -193,9 +211,7 @@ See `requirements.txt`. Works on CPU. For GPU:
   </figure>
 </p>
 
----
-
-## Caveat on the heatmap:
+### Caveat on the heatmap:
 
 > **Note:** it’s designed for **continuous and discrete targets** and shows **absolute contribution to error** (|input| × |prediction error|). It is **not** a causal attribution method and should be read as a rough, error-weighted saliency map, best for features that are **only** 0 **or** 1 (those that have been one-hot encoded).
 
