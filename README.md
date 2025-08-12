@@ -1,8 +1,8 @@
 # f1-lap-prediction
 *End-to-end GRU-based lap time prediction from real F1 telemetry & weather data.*
 
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 ![CI](https://github.com/JosiahYeater/f1-lap-prediction/actions/workflows/ci.yml/badge.svg)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 ![Python](https://img.shields.io/badge/python-3.6%2B-blue)
 ![Stars](https://img.shields.io/github/stars/JosiahYeater/f1-lap-prediction?style=social)
 
