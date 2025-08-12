@@ -151,8 +151,18 @@ See `requirements.txt`. Works on CPU. For GPU:
 
 ## My results
 
-### Best-run [Metrics](notebooks/example_model/evaluation/metrics.json):
+### Best-run metrics
 
+| Metric | Value
+|---|---
+| **MAE** (Mean Absolute Error) | `0.15 s`
+| **RMSE** (Root Mean Squared Error) | `0.29 s`
+| **R²** (Coefficient of Determination) | `0.9994`
+| **MAPE** (Mean Absolute Percentage Error) | `0.17%`
+
+<sub>Source JSON: [`notebooks/example_model/evaluation/metrics.json`](notebooks/example_model/evaluation/metrics.json). See also [Metrics explained](#metrics-explained).</sub>
+
+### Metrics Explained
 
 - **MAE (Mean Absolute Error)** — Average absolute difference between predicted and actual lap times *(in seconds)*.  
   > Here: `0.15s` → on average, predictions are within **0.15** seconds of the true lap time.
@@ -166,20 +176,22 @@ See `requirements.txt`. Works on CPU. For GPU:
 - **MAPE (Mean Absolute Percentage Error)** — Average absolute error as a percentage of the actual lap time.  
   > Here: `0.17%` → predictions are typically within **0.17%** of the true lap time.
 
+### Best-run plots
 
-### Best-run Plots:
-
-<img src="notebooks/example_model/validation_loss_plot.png" alt="Training and Validation Loss Over Epochs" width="500"/>
-
-***Figure 1:** Training and Validation Loss Over Epochs*
-
-<img src="notebooks/example_model/evaluation/graphs/true_vs_pred.png" alt="True vs Predicted" width="500"/>
-
-***Figure 2:** True vs Predicted Lap Times*
-
-<img src="notebooks/example_model/evaluation/graphs/error_heatmap.png" alt="Error Heatmap" width="500"/>
-
-***Figure 3:** Error Heatmap of the Lap Matrix (F x T)*
+<p align="center">
+  <figure style="display:inline-block;margin:8px;">
+    <img src="notebooks/example_model/validation_loss_plot.png" alt="Training and Validation Loss Over Epochs" width="420">
+    <figcaption><i>Figure 1:</i> Training & validation loss over epochs.</figcaption>
+  </figure>
+  <figure style="display:inline-block;margin:8px;">
+    <img src="notebooks/example_model/evaluation/graphs/true_vs_pred.png" alt="True vs Predicted" width="420">
+    <figcaption><i>Figure 2:</i> True vs Predicted lap times (±MAE band).</figcaption>
+  </figure>
+  <figure style="display:inline-block;margin:8px;">
+    <img src="notebooks/example_model/evaluation/graphs/error_heatmap.png" alt="Error-weighted Feature Heatmap" width="420">
+    <figcaption><i>Figure 3:</i> Error-weighted feature heatmap (see <a href="#caveat-on-the-heatmap">caveat</a>).</figcaption>
+  </figure>
+</p>
 
 ---
 
