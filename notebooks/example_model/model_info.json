@@ -1,0 +1,14 @@
+{
+  "model_name": "GRURegressor",
+  "device": "cpu",
+  "initial_learning_rate": 0.001,
+  "scheduler_factor": 0.5,
+  "scheduler_patience": 3,
+  "validation_interval": 1,
+  "validation_threshold": 0.0002,
+  "batch_size": 32,
+  "hidden_size": 128,
+  "num_layers": 2,
+  "num_epochs": 100,
+  "best_val_loss": 0.040829695105708434
+}
