@@ -2,6 +2,9 @@
 *End-to-end GRU-based lap time prediction from real F1 telemetry & weather data.*
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![CI](https://github.com/JosiahYeater/f1-lap-prediction/actions/workflows/ci.yml/badge.svg)
+![Python](https://img.shields.io/badge/python-3.6%2B-blue)
+![Stars](https://img.shields.io/github/stars/JosiahYeater/f1-lap-prediction?style=social)
 
 Predict F1 lap time from on-car telemetry + weather, using a GRU regression model.  
 Central goal: **predict lap time to within ~0.1s** on unseen laps — best run achieved **0.15s MAE**.  
