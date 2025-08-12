@@ -1,4 +1,4 @@
-name: CI (smoke test)
+name: CI (smoke and lint test)
 
 on:
   push:
