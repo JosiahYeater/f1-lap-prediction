@@ -13,7 +13,6 @@ This script:
 import torch
 from torch.utils.data import DataLoader
 import numpy as np
-from pathlib import Path
 import json
 import argparse
 import matplotlib.pyplot as plt
@@ -21,7 +20,7 @@ from tqdm import tqdm
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 
 from dataset import COLUMN_NAMES
-from model import GRURegressor, LapDataset, get_loader, load_feature_names, DEVICE, ROOT_DIR, HIDDEN_SIZE, NUM_LAYERS, DROPOUT
+from model import GRURegressor, LapDataset, load_feature_names, DEVICE, ROOT_DIR, HIDDEN_SIZE, NUM_LAYERS, DROPOUT
 
 # -----------------------------------------------------------------------------
 # Global Constants
